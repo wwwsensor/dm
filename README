@@ -1,0 +1,20 @@
+
+ SYNOPSIS
+   Dotfiles Manager deploys a Git repo to
+   $HOME and provides Git shell aliases
+
+ USAGE
+   SHOW THIS
+     $ curl -Ls v.gd/dotman | bash
+
+   DEPLOY A REPO
+     $ curl -Ls v.gd/dotman | bash -s <repo>
+
+   ALIASES
+     INSTALL
+       Download aliases file and copy it to your shell config:
+       $ curl -Ls v.gd/dotmana > aliases
+
+     HELP
+       $ gx
+
