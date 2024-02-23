@@ -1,7 +1,7 @@
 #!/bin/sh
 # WWW          : https://github.com/wwwsensor/dm
 # Author       : @sensor @ss
-# Dependencies : git curl
+# Dependencies : curl git mktemp
 
 # Handle errors
 senderr(){ echo dm: "$@";exit 1; }
