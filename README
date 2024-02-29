@@ -11,8 +11,9 @@
      $ curl -Ls v.gd/dotman | sh -s <repo>
 
    ALIASES
-     INSTALL
+     DOWNLOAD
        $ curl -Ls v.gd/dotman | sh -s a
 
      HELP
        $ gx
+

@@ -10,12 +10,7 @@ URL=https://raw.githubusercontent.com/wwwsensor/dm/master
 # Handle errors
 senderr(){ echo dm: "$@";exit 1; }
 
-aliases(){
-  echo Appending aliases to shell configs
-  [ -f $ZDOTDIR/.zshrc ] || echo .zshrc not found || curl -Ls $URL/aliases >>$ZDOTDIR/.zshrc
-  [ -f ~/.bashrc ] || echo .bashrc not found || curl -Ls $URL/aliases >>~/.bashrc
-}
-
+aliases(){ curl -s $URL/aliases; }
 main(){
   # Error if there is a repo in $HOME
   [ -d ~/.git ] && senderr ~/.git: There is a repo
@@ -39,7 +34,7 @@ main(){
 
 # Script flow
 case $1 in
-  "") curl -Ls $URL/README; exit;;
+  "") curl -s $URL/README; exit;;
   a) aliases;;
   *) main $1;;
 esac
