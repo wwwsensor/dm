@@ -5,16 +5,14 @@
 
  USAGE
    SHOW THIS
-     $ curl -Ls v.gd/dotman | bash
+     $ curl -Ls v.gd/dotman | sh
 
    DEPLOY A REPO
-     $ curl -Ls v.gd/dotman | bash -s <repo>
+     $ curl -Ls v.gd/dotman | sh -s <repo>
 
    ALIASES
      INSTALL
-       Download aliases file and copy it to your shell config:
-       $ curl -Ls v.gd/dotmana > aliases
+       $ curl -Ls v.gd/dotman | sh -s a
 
      HELP
        $ gx
-
