@@ -26,7 +26,7 @@ main(){
   git clone $1 $DIR &&
 
   # Move contents to $HOME
-  mv -f $DIR/.[!.]* ~ &&
+  cp -f $DIR/.[!.]* ~ &&
 
   # Configure repo to hide untracked files
   git config -f ~/.git/config status.showUntrackedFiles no
