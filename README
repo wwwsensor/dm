@@ -1,5 +1,5 @@
 
- Dotfiles Manager: Deploy a Git repo to \$HOME
+ Dotfiles Manager: Deploy a Git repo to $HOME
 
   dm <repo>  Deploy a repo
   dm a       Print Git aliases
