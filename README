@@ -1,19 +1,8 @@
 
- SYNOPSIS
-   Dotfiles Manager deploys a Git repo to
-   $HOME and provides Git shell aliases
+ Dotfiles Manager: Deploy a Git repo to \$HOME
 
- USAGE
-   SHOW THIS
-     $ curl -Ls v.gd/dotman | sh
-
-   DEPLOY A REPO
-     $ curl -Ls v.gd/dotman | sh -s <repo>
-
-   ALIASES
-     DOWNLOAD
-       $ curl -Ls v.gd/dotman | sh -s a
-
-     HELP
-       $ gx
+  dm <repo>  Deploy a repo
+  dm a       Print Git aliases
+  dm         Get help
+  gx         Get aliases help
 
